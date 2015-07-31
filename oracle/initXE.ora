@@ -1,0 +1,25 @@
+XE.__db_cache_size=121634816
+XE.__java_pool_size=4194304
+XE.__large_pool_size=4194304
+XE.__oracle_base='/u01/app/oracle'#ORACLE_BASE set from environment
+XE.__pga_aggregate_target=146800640
+XE.__sga_target=272629760
+XE.__shared_io_pool_size=0
+XE.__shared_pool_size=134217728
+XE.__streams_pool_size=0
+*.audit_file_dest='/u01/app/oracle/admin/XE/adump'
+*.compatible='11.2.0.0.0'
+*.control_files='/u01/app/oracle/oradata/XE/control.dbf'
+*.db_name='XE'
+*.DB_RECOVERY_FILE_DEST='/u01/app/oracle/fast_recovery_area'
+*.DB_RECOVERY_FILE_DEST_SIZE=10G
+*.diagnostic_dest='/u01/app/oracle'
+*.dispatchers='(PROTOCOL=TCP) (SERVICE=XEXDB)'
+*.job_queue_processes=4
+*.memory_target=417333248
+*.open_cursors=300
+*.remote_login_passwordfile='EXCLUSIVE'
+*.sessions=20
+*.shared_servers=4
+*.undo_management='AUTO'
+*.undo_tablespace='UNDOTBS1'

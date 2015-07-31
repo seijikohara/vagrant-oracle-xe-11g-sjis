@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - include: tasks/setup.yml
+    - include: tasks/avahi.yml
+    - include: tasks/oracle.yml
+    - include: tasks/oracle-sjis.yml

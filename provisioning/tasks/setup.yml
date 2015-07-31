@@ -1,0 +1,3 @@
+---
+- yum: name="@Development tools" state=present
+- service: name=iptables enabled=no state=stopped

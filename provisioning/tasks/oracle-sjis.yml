@@ -1,0 +1,12 @@
+---
+- copy: src=/vagrant/oracle/initXE.ora dest=/u01/app/oracle/product/11.2.0/xe/dbs/initXE.ora owner=oracle group=dba mode="u+rwx,g-rwx,o-rwx"
+
+- name: Drop default database
+  environment:
+    ORACLE_HOME: /u01/app/oracle/product/11.2.0/xe
+  shell: su - oracle -c '/u01/app/oracle/product/11.2.0/xe/bin/sqlplus / as sysdba @/vagrant/oracle/dropdb.sql'
+
+- name: Setup SJIS Oracle Database
+  environment:
+    ORACLE_HOME: /u01/app/oracle/product/11.2.0/xe
+  shell: su - oracle -c '/u01/app/oracle/product/11.2.0/xe/bin/sqlplus / as sysdba @/vagrant/oracle/createdb.sql'

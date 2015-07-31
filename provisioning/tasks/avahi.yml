@@ -1,0 +1,5 @@
+---
+- yum: name="avahi" state=present
+- replace: dest=/etc/avahi/avahi-daemon.conf regexp=^#disallow-other-stacks=no replace=disallow-other-stacks=yes
+- service: name=messagebus enabled=yes state=restarted
+- service: name=avahi-daemon enabled=yes state=restarted
